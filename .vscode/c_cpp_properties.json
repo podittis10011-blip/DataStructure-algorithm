@@ -1,39 +1,20 @@
-// {
-//     "configurations": [
-//         {
-//             "name": "Win32",
-//             "includePath": [
-//                 "${workspaceFolder}/**"
-//             ],
-//             "defines": [
-//                 "_DEBUG",
-//                 "UNICODE",
-//                 "_UNICODE"
-//             ],
-//             "cStandard": "c17",
-//             "cppStandard": "gnu++14",
-//             "intelliSenseMode": "windows-gcc-x64"
-//         }
-//     ],
-//     "version": 4
-// }
-
 {
   "configurations": [
     {
       "name": "Win32",
       "includePath": [
         "${workspaceFolder}/**",
-        "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.29.30133/include", // 示例路径，根据你的VS安装位置调整
-        "C:/Program Files (x86)/Windows Kits/10/Include/10.0.19041.0/ucrt"
+        "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.41.34120/include",
+        "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.41.34120/atl/include",
+        "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.41.34120/onecore/include",
+        "C:/Program Files (x86)/Windows Kits/10/Include/10.0.22621.0/ucrt",
+        "C:/Program Files (x86)/Windows Kits/10/Include/10.0.22621.0/um",
+        "C:/Program Files (x86)/Windows Kits/10/Include/10.0.22621.0/shared",
+        "C:/Program Files (x86)/Windows Kits/10/Include/10.0.22621.0/winrt"
       ],
-      "defines": [
-        "_DEBUG",
-        "UNICODE",
-        "_UNICODE"
-      ],
-      "windowsSdkVersion": "10.0.19041.0",
-      "compilerPath": "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.29.30133/bin/Hostx64/x64/cl.exe",
+      "defines": ["_DEBUG", "UNICODE", "_UNICODE"],
+      "windowsSdkVersion": "10.0.22621.0",
+      "compilerPath": "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.41.34120/bin/Hostx64/x64/cl.exe",
       "cStandard": "c17",
       "cppStandard": "c++17",
       "intelliSenseMode": "windows-msvc-x64"
