@@ -1,5 +1,5 @@
 package Enum.luogu_p2241;
-import java.util.Scanner;
+// import java.util.Scanner;
 
 // class tongjifangxing{
 //     // long n,m;
@@ -36,7 +36,7 @@ import java.util.Scanner;
 
 
 // }
-
+import java.util.Scanner;
 class Main{
     // long n,m;
     // long changfangxing,zhengfangxing;
