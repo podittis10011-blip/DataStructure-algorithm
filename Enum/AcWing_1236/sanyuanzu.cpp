@@ -26,6 +26,7 @@ int n;
 int arrA[N],arrB[N],arrC[N];
 
 
+
 int main(){
     cin >> n;
 
@@ -49,5 +50,10 @@ int main(){
     }
 
     //算法逻辑部分
+    //<= B ——> 
+
+    //A和B的前缀和
+
+
     return 0;
 }
