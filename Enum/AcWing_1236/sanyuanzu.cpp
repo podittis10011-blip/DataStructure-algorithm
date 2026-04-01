@@ -24,6 +24,7 @@ using namespace std;
 const int N = 100010;
 int n;
 int arrA[N],arrB[N],arrC[N];
+int cnt[N];
 
 
 
@@ -52,8 +53,16 @@ int main(){
     //算法逻辑部分
     //<= B ——> 
 
-    //A和B的前缀和
+    //先计算出A和C的前缀和
+    //统计出集合A、C出现的频率
 
+    //考虑到数组中存储的元素个数会重复
+    //cnt[arrA[i]]++;
+    //cnt[arrC[i]]++;
+    //每个数值的前缀和，桶排序
+    //以数组B中某个元素b为基准，小的元素全部前缀和，大的元素前缀和
+
+    
 
     return 0;
 }
