@@ -48,7 +48,7 @@ int zhongzhi(int arr[],int searchValue,int n){
 int main(){
     cin >> n >> q;
 
-    for(int i = 1;i <= n;i++){
+    for(int i = 0;i <= n - 1;i++){
         cin >> arr[i];
     }
 
@@ -56,7 +56,7 @@ int main(){
         cin >> searchValue;
         int qishiValue = qishi(arr,searchValue,n);
         int zhongzhiValue = zhongzhi(arr,searchValue,n);
-        cout << qishiValue << zhongzhiValue << endl;
+        cout << qishiValue<<" "<< zhongzhiValue << endl;
     }
 
 }
