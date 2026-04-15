@@ -99,6 +99,7 @@ void msort(int l ,int r){
 
 
 int main(){
+    cin >> n;
     for(int i = 0;i <= n - 1;i++){
     cin >> a[i];
     }
