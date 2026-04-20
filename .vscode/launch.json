@@ -5,6 +5,48 @@
             "type": "java",
             "name": "Main",
             "request": "launch",
+            "mainClass": "doublePointer.Leetcode_283.try02.Main",
+            "projectName": "DataStructureAlgorithm_2b96d7f2"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "doublePointer.Leetcode_283.try01.Main",
+            "projectName": "DataStructureAlgorithm_2b96d7f2"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "doublePointer.luogu_p1102.Try01.Main",
+            "projectName": "DataStructureAlgorithm_2b96d7f2"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "doublePointer.luogu_p1147.try01.Main",
+            "projectName": "DataStructureAlgorithm_2b96d7f2"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "doublePointer.luogu_p1102.Main",
+            "projectName": "DataStructureAlgorithm_2b96d7f2"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "doublePointer.luogu_p1147.Main",
+            "projectName": "DataStructureAlgorithm_2b96d7f2"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
             "mainClass": "loop.luogu_p3383.Main",
             "projectName": "DataStructureAlgorithm_2b96d7f2"
         },
