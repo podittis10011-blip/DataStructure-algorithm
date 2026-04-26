@@ -63,8 +63,10 @@ public class Main{
                 if(sum == m){
                     System.out.println(l + " " + r);
                 }
-                sum -= l;
-                ++l;
+                else{
+                    sum -= l;
+                    ++l;
+                }
             }
             
         }
