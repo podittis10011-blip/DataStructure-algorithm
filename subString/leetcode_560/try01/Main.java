@@ -21,15 +21,15 @@ import java.io.*;
 */
 
 public class Main {
-    static int m,k,ans;
+    static int m,ans;
 
-    //输入一个数字m和一个数字k，输出该1~m中相加起来等于k的串的个数
+    //输入一个数字m和一个数字t，输出该1~m中相加起来等于t的串的个数
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         
         m = sc.nextInt();
-        k = sc.nextInt();
+        // t = sc.nextInt();
 
         int l = 1;int r = 1;int k = 1; 
         ans = 0;
@@ -39,20 +39,29 @@ public class Main {
                 r++;
                 k += r;
             }
-            else{
+            if(k >= m){
                 if(k == m){
                     ans++;
                     System.out.println(l + " " + r);
                 }
+                k -= l;
+                l++;
+            }
+
+            // else{
+                // if(k == m){
+                //     ans++;
+                //     System.out.println(l + " " + r);
+                // }
                 // else{
                     // k -= l;
                     //  l++;
                 // }
 
                 //无论是否等于,l都要前移，不然会陷入死循环，也能看出为什么设置l的判断条件的原因
-                k -= l;
-                l++;
-            }
+                // k -= l;
+                // l++;
+            // }
         }
 
         System.out.println(ans);
