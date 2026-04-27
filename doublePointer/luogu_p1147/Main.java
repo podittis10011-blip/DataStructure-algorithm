@@ -65,8 +65,9 @@ public class Main{
                 }
                 else{
                     sum -= l;
-                    ++l;
+                    ++l;    
                 }
+
             }
             
         }
