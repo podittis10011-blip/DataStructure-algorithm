@@ -5,6 +5,13 @@
             "type": "java",
             "name": "Main",
             "request": "launch",
+            "mainClass": "subString_huadongchuangkou.luogu_p1638.Try01.Main",
+            "projectName": "DataStructureAlgorithm_2b96d7f2"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
             "mainClass": "subString.Leetcode_239.Main",
             "projectName": "DataStructureAlgorithm_2b96d7f2"
         },

@@ -1,4 +1,4 @@
-package subString.leetcode_560.try02;
+package subString_huadongchuangkou.leetcode_560.try02;
 
 import java.util.*;
 import java.io.*;
