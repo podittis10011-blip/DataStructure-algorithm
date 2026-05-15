@@ -5,6 +5,55 @@
             "type": "java",
             "name": "Main",
             "request": "launch",
+            "mainClass": "Array.luogu_p1496.Try01.Try02.Main",
+            "projectName": "DataStructureAlgorithm_2b96d7f2"
+        },
+        {
+            "type": "java",
+            "name": "List",
+            "request": "launch",
+            "mainClass": "List.List.List",
+            "projectName": "DataStructureAlgorithm_2b96d7f2"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "doublePointer.luogu_p1102.Try04.Main",
+            "projectName": "DataStructureAlgorithm_2b96d7f2"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "doublePointer.luogu_p1102.Try03.Main",
+            "projectName": "DataStructureAlgorithm_2b96d7f2"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Binary.luogu_p2249.Try01.Main",
+            "projectName": "DataStructureAlgorithm_2b96d7f2"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Array.leetcode_189.Main",
+            "projectName": "DataStructureAlgorithm_2b96d7f2"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Array.leetcode_53.Try01.Main",
+            "projectName": "DataStructureAlgorithm_2b96d7f2"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
             "mainClass": "subString_huadongchuangkou.luogu_p1638.Try01.Main",
             "projectName": "DataStructureAlgorithm_2b96d7f2"
         },

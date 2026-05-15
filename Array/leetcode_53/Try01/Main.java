@@ -42,6 +42,8 @@ public class Main {
         }
 
         for(int i = 1;i <= n;i++){
+            //未考虑到基准点本身就是最大值这一情况
+            //for(int j = i + 1;j <= n;j++)
             for(int j = i;j <= n;j++){
                 ans = Math.max(sum[j] - sum[i] + nums[i], ans);
             }
