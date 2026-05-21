@@ -3,6 +3,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "listStack",
+            "request": "launch",
+            "mainClass": "Stack.ListStack.Try01.listStack",
+            "projectName": "DataStructureAlgorithm_2b96d7f2"
+        },
+        {
+            "type": "java",
+            "name": "arrayStack",
+            "request": "launch",
+            "mainClass": "Stack.ArrayStack.Try01.arrayStack",
+            "projectName": "DataStructureAlgorithm_2b96d7f2"
+        },
+        {
+            "type": "java",
             "name": "Main",
             "request": "launch",
             "mainClass": "Array.luogu_p1496.Try01.Try02.Main",

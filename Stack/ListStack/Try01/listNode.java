@@ -1,8 +1,8 @@
-package Stack.ListStack.Try02;
+package Stack.ListStack.Try01;
 
 public class listNode {
-    private listNode next;
-    private int value;
+    listNode next;
+    int value;
 
     //无参构造器
     public listNode(){
