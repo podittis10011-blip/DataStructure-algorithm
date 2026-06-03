@@ -1,7 +1,11 @@
 {
   "permissions": {
     "allow": [
-      "Bash(git pull:*)"
+      "Bash(git pull:*)",
+      "Bash(java -version)",
+      "Bash(javac -version)",
+      "Read(//d/JDK/JDK17/bin/**)",
+      "Bash(\"D:/JDK/JDK17/bin/java.exe\" -version)"
     ]
   }
 }
