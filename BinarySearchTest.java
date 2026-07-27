@@ -1,7 +1,7 @@
 // import java.util.Scanner;
 import java.util.*;
 import java.io.*;
-public class test {
+public class BinarySearchTest {
     static int[] arr;
     static int n,mid;
 
