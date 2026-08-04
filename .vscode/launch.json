@@ -3,6 +3,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "qujianhe",
+            "request": "launch",
+            "mainClass": "qujianhe",
+            "projectName": "DataStructureAlgorithm_2b96d7f2"
+        },
+        {
+            "type": "java",
+            "name": "Solution",
+            "request": "launch",
+            "mainClass": "Solution",
+            "projectName": "DataStructureAlgorithm_2b96d7f2"
+        },
+        {
+            "type": "java",
             "name": "reverseString",
             "request": "launch",
             "mainClass": "reverseString",

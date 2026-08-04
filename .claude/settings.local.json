@@ -5,7 +5,13 @@
       "Bash(java -version)",
       "Bash(javac -version)",
       "Read(//d/JDK/JDK17/bin/**)",
-      "Bash(\"D:/JDK/JDK17/bin/java.exe\" -version)"
+      "Bash(\"D:/JDK/JDK17/bin/java.exe\" -version)",
+      "Bash(javac \"DataStructure/List/SingleLinkedList/SingleLinkedList.java\")",
+      "Bash(java DataStructure.List.SingleLinkedList.SingleLinkedList)",
+      "Bash(javac -encoding UTF-8 \"DataStructure/List/SingleLinkedList/SingleLinkedList.java\")",
+      "Bash(java -Dfile.encoding=UTF-8 DataStructure.List.SingleLinkedList.SingleLinkedList)",
+      "Bash(javac -encoding UTF-8 \"DataStructure/List/SingleLinkedList/SentinelLinkedList.java\")",
+      "Bash(java -Dfile.encoding=UTF-8 DataStructure.List.SingleLinkedList.SentinelLinkedList)"
     ]
   }
 }
