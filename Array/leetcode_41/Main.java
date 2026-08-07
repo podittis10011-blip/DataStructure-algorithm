@@ -18,7 +18,9 @@ public class Main {
     // n = nums.length;
         for(int i = 0;i <= n-1;i++){
             //等于0怎么办？
-            if(nums[i] < 0){
+            // if(nums[i] < 0){
+            //question01：需要包含0
+            if(nums[i] <= 0){
                 //将所有负数赋值为n + 1
                 nums[i] = n + 1;
             }
@@ -27,8 +29,10 @@ public class Main {
         //将所有 < n的数对应的位置标记为负，已经为负的不用再标记
         for(int i = 0;i <= n-1;i++){
             //不包含n - 1;
-            if(nums[i] < n && nums[i] > 0){
+            if(nums[i] <= n && nums[i] > 0){
                 nums[nums[i] - 1] = -nums[i];
+                //question02:保留目标位置的绝对值，只取饭标记
+                // nums[nums[i]-1] = -Math.abs(nums[nums[i]-1]);
             }
         }
 
