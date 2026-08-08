@@ -1,9 +1,10 @@
 package doublePointer.luogu_p1381;
+import java.nio.charset.CharacterCodingException;
 import java.util.HashMap;
 import java.util.Scanner;
 import java.util.function.BiFunction;
 
-class Main{
+public class Main{
     static int n,m;
     static String[] text;
     static HashMap<String,Boolean> wordtable;
@@ -66,15 +67,21 @@ class Main{
             }
 
             //如果该单词表中的单词第一次出现，sum++
-            if(count.get(text[j])==1){
+            // if(count.get(text[j])==1){
+            // ChatGPT_error01:
+            if(count.containsKey(text[j]) && count.get(text[j])==1){
                 sum++;
                 len = j - i + 1; 
             }
             while(i <= j){
-                if(count.get(text[i]) == 1){
+                // ChatGPT_error03:
+                // if(count.get(text[i]) == 1){
+                if(count.containsKey(text[i]) && count.get(text[i]) == 1){
                     break;
                 }
-                if(count.get(text[i]) >= 2){
+                // if(count.get(text[i]) >= 2){
+                // ChatGPT_error02:
+                if(count.containsKey(text[i]) && count.get(text[i]) >= 2){
                     Integer oldValue = count.get(text[i]);
                     count.put(text[i],oldValue - 1);
                     i++;
@@ -92,3 +99,117 @@ class Main{
 
     }
 }
+
+// ---
+// import java.util.*;
+
+// //单词表——set（Hashset）
+// //课文——article(String[])
+// //滑动窗口中记录各个单词表中需要背的单词出现的次数——cnt(HashMap)
+
+// public class Main {
+
+//     public static void main(String[] args) {
+
+//         Scanner sc = new Scanner(System.in);
+
+//         int n = sc.nextInt();
+//         //目标单词集合
+//         //相当于单词表，初始化需要背的单词
+//         HashSet<String> set = new HashSet<>();
+//         for(int i = 0; i < n; i++){
+//             set.add(sc.next());
+//         }
+//         int m = sc.nextInt();
+//         //article相当于存储课文的字符串数组
+//         String[] article = new String[m];
+//         for(int i = 0; i < m; i++){
+//             article[i] = sc.next();
+//         }
+
+//         //为什么目标单词/需要背的单词要用Hashset进行存储，
+//         //但是课文中的单词直接使用字符串数组就可以进行存储？
+
+
+
+//         //窗口中单词出现次数
+//         HashMap<String,Integer> cnt = new HashMap<>();
+//         int left = 0;
+//         //当前窗口包含多少种目标单词
+//         //当前窗口中包含的单词表中单词的数量
+//         int have = 0;
+//         //最大包含数量
+//         //滑动窗口中包含的单词一直在变化，用一个max值计数这个过程中出现的包含单词表中最多单词的一种情况
+//         int max = 0;
+//         //最短长度
+//         //最短长度取了一个很大的初始值，方便后期对该值进行覆盖
+//         int ans = Integer.MAX_VALUE;
+
+//         for(int right = 0; right < m; right++){
+
+//             String word = article[right];
+
+
+//             //加入右端点
+//             if(set.contains(word)){
+
+//                 cnt.put(word,
+//                         cnt.getOrDefault(word,0)+1);
+
+
+//                 if(cnt.get(word)==1){
+//                     have++;
+//                 }
+//             }
+
+
+
+//             /*
+//              * 收缩窗口
+//              *
+//              * 删除：
+//              * 1.不是目标单词
+//              * 2.目标单词但是数量超过1
+//              */
+//             while(left <= right){
+
+//                 String lword = article[left];
+
+
+//                 if(!set.contains(lword)){
+//                     left++;
+//                 }
+//                 else if(cnt.get(lword)>1){
+
+//                     cnt.put(lword,cnt.get(lword)-1);
+//                     left++;
+
+//                 }
+//                 else{
+//                     break;
+//                 }
+
+//             }
+
+
+
+//             //更新答案
+
+//             if(have > max){
+
+//                 max = have;
+//                 ans = right-left+1;
+
+//             }
+//             else if(have == max){
+
+//                 ans = Math.min(ans,right-left+1);
+
+//             }
+
+
+//         }
+//         System.out.println(max);
+//         System.out.println(ans);
+//     }
+// }
