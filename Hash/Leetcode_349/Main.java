@@ -7,7 +7,9 @@ public class Main {
     static int[] nums;
     static int n,target,low,quick;
 
-    // public static int[] towSum(int nums,int target){}e
+    public static int[] towSum(int nums,int target){
+        
+    }
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
