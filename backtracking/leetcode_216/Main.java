@@ -12,7 +12,8 @@ public class Main {
     static ArrayList<LinkedList<Integer>> result;
 
     static void backtracking( int targetSum,int k, int startIndex,int sum){
-
+        //剪枝操作：
+        if(sum > targetSum)return;
         if(path.size() == k){
             //增加符合条件的条件语句
             if(sum == targetSum){
@@ -23,7 +24,6 @@ public class Main {
 
         //只能使用数字1~9
         for (int i = startIndex; i <= 9; i++){
-        // for (int i = startIndex; i <= n - (k - path.size()) + 1; i++){
             path.add(i);
             sum += i;
             backtracking(targetSum, k, i + 1,sum);
