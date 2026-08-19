@@ -27,7 +27,8 @@ public class Main {
             return;
         }
 
-        for(int i = startIndex;i < candidates.length;i++){
+        // for(int i = startIndex;i < candidates.length;i++){
+        for (int i = startIndex; i < candidates.length && sum + candidates[i] <= target; i++){
             sum += candidates[i];
             path.add(candidates[i]);
             backtracking(candidates, target, sum, i);
