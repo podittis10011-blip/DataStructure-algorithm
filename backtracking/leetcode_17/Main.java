@@ -79,46 +79,46 @@ public class Main {
     }
 }
 
-//Leetcode
-class Solution {
-    static final String[] letterMap = {"","","abc","def","ghi","jkl","mno","pqrs","tuv","wxyz"};
+//Leetcode:
+// class Solution {
+//     static final String[] letterMap = {"","","abc","def","ghi","jkl","mno","pqrs","tuv","wxyz"};
 
-    //创建动态数组result存储结果集
-    static ArrayList<String> result = new ArrayList<String>();
+//     //创建动态数组result存储结果集
+//     static ArrayList<String> result = new ArrayList<String>();
 
-    //符合调节的结果
-    static StringBuilder s = new StringBuilder();
+//     //符合调节的结果
+//     static StringBuilder s = new StringBuilder();
 
-    public static void backtracking(String digits,int index){
-        if(index == digits.length()){
-            result.add(s.toString());
-            return;
-        }
+//     public static void backtracking(String digits,int index){
+//         if(index == digits.length()){
+//             result.add(s.toString());
+//             return;
+//         }
 
-        //这一部分是为了完成从数字-字母集的映射
-        //将字符串digits转换成字符数组，取出索引为index的字符赋值给digit
-        // int digit = digits.toCharArray()[index];
-        //取数字对应的字符集
-        // String letters = letterMap[digit + 1];
+//         //这一部分是为了完成从数字-字母集的映射
+//         //将字符串digits转换成字符数组，取出索引为index的字符赋值给digit
+//         // int digit = digits.toCharArray()[index];
+//         //取数字对应的字符集
+//         // String letters = letterMap[digit + 1];
 
-        int digit = digits.charAt(index) - '0';
-        String letters = letterMap[digit];
+//         int digit = digits.charAt(index) - '0';
+//         String letters = letterMap[digit];
 
 
-        for(int i = 0;i < letters.length();i++){
-            s.append(letters.toCharArray()[i]);
-            backtracking(digits,index + 1);
-            s.deleteCharAt(s.length() - 1);
-        }
-    }
+//         for(int i = 0;i < letters.length();i++){
+//             s.append(letters.toCharArray()[i]);
+//             backtracking(digits,index + 1);
+//             s.deleteCharAt(s.length() - 1);
+//         }
+//     }
 
-    public List<String> letterCombinations(String digits) {
-        result.clear();
+//     public List<String> letterCombinations(String digits) {
+//         result.clear();
 
-        if(digits.length() == 0){
-            return result;
-        }
-        backtracking(digits, 0);
-        return result;
-    }
-}
+//         if(digits.length() == 0){
+//             return result;
+//         }
+//         backtracking(digits, 0);
+//         return result;
+//     }
+// }

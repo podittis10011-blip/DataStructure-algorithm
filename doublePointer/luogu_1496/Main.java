@@ -53,15 +53,18 @@ public class Main {
         sum += ed - st;
         for(int i = 2; i <= n;i++){
             if(a[i].l < ed){
+                //覆盖
                 if(a[i].r < ed){
                     continue;
                 }
+                //重叠
                 else{
                     st = ed;
                     ed = a[i].r;
                     sum += ed -st;
                 }
             }
+            //相离
             else{
                 st = a[i].l;
                 ed = a[i].r;

@@ -1,4 +1,4 @@
-package backtracking.Leetcode_131;
+package backtracking.split.Leetcode_131;
 
 import java.util.Scanner;
 import java.util.List;

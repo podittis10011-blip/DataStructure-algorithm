@@ -1,4 +1,4 @@
-package backtracking.leetcode_40;
+package backtracking.combination.leetcode_40;
 
 import java.util.Scanner;
 import java.util.List;

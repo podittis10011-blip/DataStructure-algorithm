@@ -1,8 +1,11 @@
 package backtracking.subset.leetcode_90;
 
+//这道题似乎不用used来存储是否在同一树枝，也可以实现相同的功能并且更为简洁
+
 import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Arrays;;
 
 public class Main {
     static int[] nums;
@@ -13,6 +16,7 @@ public class Main {
     // static boolean[] used;
 
     public static List<List<Integer>> subsetsWithDup(int[] nums) {
+        Arrays.sort(nums);
         boolean[] used = new boolean[nums.length];
         backtracking(nums,0,used);
         return result;
@@ -57,3 +61,34 @@ public class Main {
     }
 }
 
+// leetcode
+// class Solution {
+//     static ArrayList<List<Integer>> result;
+//     static ArrayList<Integer> path;
+
+//     public static void backtracking(int[] nums,int startIndex,boolean[] used){
+//         result.add(new ArrayList<Integer>(path));
+//         // if(startIndex >= nums.length){
+//         //     return;
+//         // }
+//         for(int i = startIndex;i < nums.length;i++){
+//             if(i > 0 && nums[i] == nums[i - 1] && used[i - 1] == false){
+//                 continue;
+//             }
+//             path.add(nums[i]);
+//             used[i] = true;
+//             backtracking(nums, i + 1,used);
+//             used[i] = false;
+//             path.remove(path.size() - 1);
+//         }
+//     }
+
+//     public List<List<Integer>> subsetsWithDup(int[] nums) {
+//         result = new ArrayList<List<Integer>>();
+//         path = new ArrayList<Integer>();
+//         Arrays.sort(nums);
+//         boolean[] used = new boolean[nums.length];
+//         backtracking(nums,0,used);
+//         return result;
+//     }
+// }
