@@ -21,7 +21,8 @@ public class Main {
 
         // 我记得这里可以进行剪枝优化，组合数，按照升序字典序进行排序，
         // 从开始位置进行遍历
-        for(int i = startIndex; i <= n;i++){
+        // for(int i = startIndex; i <= n;i++){
+        for (int i = startIndex; i <= n - (k - path.size()) + 1; i++){
             path.add(i);
             backtracking(n, k, i + 1);
             path.removeLast();
