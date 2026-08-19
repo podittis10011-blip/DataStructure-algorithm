@@ -5,6 +5,20 @@
             "type": "java",
             "name": "Main",
             "request": "launch",
+            "mainClass": "backtracking.permutation.leetcode_47.Main",
+            "projectName": "DataStructureAlgorithm_2b96d7f2"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "backtracking.permutation.leetcode_46.Main",
+            "projectName": "DataStructureAlgorithm_2b96d7f2"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
             "mainClass": "backtracking.subset.Leetcode_491.Main",
             "projectName": "DataStructureAlgorithm_2b96d7f2"
         },

@@ -59,3 +59,36 @@ public class Main {
         
     }
 }
+
+// leetcode:
+// class Solution {
+//     static ArrayList<List<Integer>> result;
+//     static ArrayList<Integer> path;
+
+//     public static void backtracking(int[] nums,int startIndex){
+//         if(path.size() > 1){
+//             result.add(new ArrayList<Integer>(path));
+//         }
+//         HashSet<Integer> uset = new HashSet<Integer>();
+//         for(int i = startIndex;i < nums.length;i++){
+//             if(!path.isEmpty() && nums[i] < path.get(path.size() - 1)||uset.contains(nums[i])){
+//                 continue;
+//             }
+
+//             uset.add(nums[i]);
+//             path.add(nums[i]);
+//             backtracking(nums, i + 1);
+//             path.remove(path.size() - 1);
+
+//         }
+//     }
+
+//     public List<List<Integer>> findSubsequences(int[] nums) {
+//         result = new ArrayList<List<Integer>>();
+//         path = new ArrayList<Integer>();
+
+//         boolean[] used = new boolean[nums.length];
+//         backtracking(nums,0);
+//         return result;
+//     }
+// }
