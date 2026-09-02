@@ -61,6 +61,113 @@ public class Main {
     }
 }
 
+// class Solution {
+//     static int n,m,ans;
+//     static int[] dx = {-1, 0, 1, 0};
+//     static int[] dy = {0, 1, 0, -1};
+ 
+//     static void dfs(int x,int y,char[][] grid){
+//         grid[x][y] = '0';
+
+//         for(int i = 0; i < 4;i++){
+//             int a = x + dx[i];
+//             int b = y + dy[i];
+//             if(a < 0 || a >= n || b < 0 || b >= m){
+//                 continue;
+//             }
+//             if(grid[a][b] == '0'){
+//                 continue;
+//             }
+//             dfs(a,b,grid);
+//         }
+//     }
+
+//     public int numIslands(char[][] grid) {
+//     n = grid.length;
+//     m = grid[0].length;
+//     ans = 0;
+
+//     for(int i = 0;i < n;i++){
+//         for(int j = 0; j < m;j++){
+//             if(grid[i][j] == '1'){
+//                 ans++;dfs(i,j,grid);
+//             }
+//         }
+//     }
+
+//         return ans;
+//     }
+
+
+// }
+
+
+// }
+
+// import java.util.Scanner;
+
+// public class Main {
+//     static int n, m, ans;
+//     static char[][] grid;
+//     static int[] dx, dy;
+
+//     public static int numIslands(char[][] grid) {
+//         for (int i = 0; i < n; i++) {
+//             for (int j = 0; j < m; j++) {
+//                 if (grid[i][j] == 'W') {
+//                     ans++;
+//                     dfs(i, j);
+//                 }
+//             }
+//         }
+
+//         return ans;
+//     }
+
+//     static void dfs(int x, int y) {
+//         // 将已经搜索过的水域标记为陆地
+//         grid[x][y] = '.';
+
+//         for (int i = 0; i < 8; i++) {
+//             int a = x + dx[i];
+//             int b = y + dy[i];
+
+//             if (a < 0 || a >= n || b < 0 || b >= m) {
+//                 continue;
+//             }
+
+//             if (grid[a][b] == '.') {
+//                 continue;
+//             }
+
+//             dfs(a, b);
+//         }
+//     }
+
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+
+//         n = sc.nextInt();
+//         m = sc.nextInt();
+
+//         grid = new char[n + 1][m + 1];
+
+//         // 八个方向
+//         dx = new int[]{-1, -1, -1, 0, 1, 1, 1, 0};
+//         dy = new int[]{-1, 0, 1, 1, 1, 0, -1, -1};
+
+//         // 初始化地图
+//         for (int i = 0; i < n; i++) {
+//             String s = sc.next();
+//             grid[i] = s.toCharArray();
+//         }
+
+//         numIslands(grid);
+
+//         System.out.print(ans);
+//     }
+// }
+
 
 // import java.util.*;
 
