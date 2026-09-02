@@ -5,6 +5,27 @@
             "type": "java",
             "name": "Main",
             "request": "launch",
+            "mainClass": "DFS.Luogu_p1605.try02.Main",
+            "projectName": "DataStructureAlgorithm_2b96d7f2"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "DFS.dfs.Main",
+            "projectName": "DataStructureAlgorithm_2b96d7f2"
+        },
+        {
+            "type": "java",
+            "name": "sArrayList",
+            "request": "launch",
+            "mainClass": "DataStructure.Array.sArrayList",
+            "projectName": "DataStructureAlgorithm_2b96d7f2"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
             "mainClass": "greedy.luogu_2512.Main",
             "projectName": "DataStructureAlgorithm_2b96d7f2"
         },

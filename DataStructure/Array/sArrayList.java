@@ -95,7 +95,7 @@ class sArrayList{
 		}
 		
 		al.add(2);
-		System.out.println(al.intArray[10]);
+		// System.out.println(al.intArray[10]);
 
 		sArrayList al1 = new sArrayList();
 

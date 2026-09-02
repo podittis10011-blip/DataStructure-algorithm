@@ -11,7 +11,11 @@
       "Bash(javac -encoding UTF-8 \"DataStructure/List/SingleLinkedList/SingleLinkedList.java\")",
       "Bash(java -Dfile.encoding=UTF-8 DataStructure.List.SingleLinkedList.SingleLinkedList)",
       "Bash(javac -encoding UTF-8 \"DataStructure/List/SingleLinkedList/SentinelLinkedList.java\")",
-      "Bash(java -Dfile.encoding=UTF-8 DataStructure.List.SingleLinkedList.SentinelLinkedList)"
+      "Bash(java -Dfile.encoding=UTF-8 DataStructure.List.SingleLinkedList.SentinelLinkedList)",
+      "Bash(git check-ignore *)",
+      "Bash(echo \"=== mingw64/include contents ===\"; ls \"/d/mingw64/include/\" 2>&1 | head -50; echo \"=== find iostream under mingw64 ===\"; find \"/d/mingw64\" -maxdepth 5 -name \"iostream\" 2>/dev/null | head; echo \"=== find vector header ===\"; find \"/d/mingw64\" -maxdepth 5 -name \"vector\" 2>/dev/null | head)",
+      "Read(//d/mingw64/include//**)",
+      "Read(//d/mingw64/**)"
     ]
   }
 }
