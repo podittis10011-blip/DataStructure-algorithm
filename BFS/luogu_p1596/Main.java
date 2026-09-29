@@ -1,5 +1,6 @@
 package BFS.luogu_p1596;
 
+import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;
 
@@ -7,10 +8,33 @@ public class Main {
     static int n,m,ans;
     static char[][] grid;
     static int[] dx,dy;
-    static Queue<> que;
+
+    public static void bfs(int x,int y){
+        Queue<int[]> que = new LinkedList<>();
+        que.offer(new int[]{x, y});
+        grid[x][y] = '.';
+
+        while(!que.isEmpty()){
+            int[] t = que.poll();
+            for(int i = 0; i < 8; i++){
+                int a = t[0] + dx[i], b = t[1] + dy[i];
+                if(a < 0 || a >= n || b < 0 || b >= m) continue;
+                if(grid[a][b] == '.') continue;
+                grid[a][b] = '.';
+                que.offer(new int[]{a, b});
+            }
+        }
+    }
 
     public static int numIslands(char[][] grid) {
-        
+        for(int i = 0; i < n; i++){
+            for(int j = 0; j < m; j++){
+                if(grid[i][j] == 'W'){
+                    ans++;
+                    bfs(i, j);
+                }
+            }
+        }
         return ans;
     }
 

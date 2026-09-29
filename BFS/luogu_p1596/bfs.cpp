@@ -13,22 +13,27 @@ int dy[8]={-1,0,1,1,1,0,-1,-1};
 void bfs(int x,int y){
   queue<pair<int,int>> q;
   q.push({x,y});
-  g[x][y]='.';                 // 入队即标记，避免重复入队
+  g[x][y]='.';                 // 入队就标成 '.'，避免同一格被多次入队
   while(q.size()){
+    // 解释：取出队首元素 t，并从队列中移除。
+    // auto t = q.front(); q.pop(); // C++写法
+
+    // Java实现如下：
+    // int[] t = que.poll(); // poll()方法返回并移除队首元素
+    // for(int i=0;i<8;i++){
     auto t=q.front();q.pop();
     for(int i=0;i<8;i++){
       int a=t.first+dx[i],b=t.second+dy[i];
       if(a<0||a>=n||b<0||b>=m)continue;
       if(g[a][b]=='.')continue;
-      g[a][b]='.';             // 先标记再入队
+      g[a][b]='.';
       q.push({a,b});
     }
   }
 }
-
 int main(){
   cin >> n >> m;
-  for(int i=0;i<n;i++)
+  for(int i=0;i<n;i++) 
     scanf("%s",g[i]);
   int ans=0;
   for(int i=0;i<n;i++)
